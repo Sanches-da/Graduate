@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Фотон</string>
+
+    <!-- Fonts -->
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_black">sans-serif-black</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+    <string name="title_1">Онлайн галерея фуд фотографии.</string>
+    <string name="title_2">Для вдохновения и обучения.</string>
+    <string name="error_message">Ошибка приложения</string>
+    <string name="menu_home">Главная</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="menu_upload">Загрузить</string>
+
+
+</resources>
