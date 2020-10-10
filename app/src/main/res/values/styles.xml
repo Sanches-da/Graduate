@@ -79,8 +79,4 @@
 
     </style>
 
-    <style name="search_spacing_style">
-        <item name="android:layout_margin">@dimen/spacing_normal_16</item>
-    </style>
-
 </resources>

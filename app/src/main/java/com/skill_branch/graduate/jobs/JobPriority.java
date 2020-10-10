@@ -1,4 +1,4 @@
-package com.skill_branch.graduate.jobs;
+package com.skill_branch.middle.jobs;
 
 
 public class JobPriority {
