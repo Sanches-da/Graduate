@@ -4,32 +4,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <AutoCompleteTextView
-            android:id="@+id/filter_text_edt"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/search_spacing_style"
+            android:id="@+id/search_bar_grp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:hint="Фильтр по названию или описанию"
-            android:layout_weight="1"
-            tools:text = "filter text"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/filter_text_edt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_small_24"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_24sp"
+                android:hint="Поиск"
+                android:background="@color/transparent"
+                tools:text="filter text"
             />
         <ImageView
             android:id="@+id/filter_back_apply_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_custom_back_arrow_black_24dp"
+            app:srcCompat="@drawable/ic_custom_back_arrow_black_24dp"
             />
         <ImageView
             android:id="@+id/filter_clear_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_custom_cancel_black_24dp"
+            app:srcCompat="@drawable/ic_custom_cancel_black_24dp"
             />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_gray"
+            android:orientation="horizontal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:clickable="true"
+            tools:listitem="@layout/item_search_history"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/color_gray"
+            android:orientation="horizontal"/>
+
+        <TextView
+            style="@style/search_spacing_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="bold"
+            android:text="Теги"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_tags_list"
+            style="@style/search_spacing_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager"
+            tools:listitem="@layout/item_tag"/>
     </LinearLayout>
 </com.skill_branch.graduate.ui.screens.search.find.FindView>

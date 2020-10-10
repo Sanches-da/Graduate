@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.skill_branch.graduate.ui.screens.photo_list.PhotoListItem xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+                                                               xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                               xmlns:tools="http://schemas.android.com/tools"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -33,7 +34,7 @@
             >
             <ImageView
                 style="@style/photo_list_icon"
-                android:src="@drawable/ic_custom_favorites_white_24dp"
+                app:srcCompat="@drawable/ic_custom_favorites_white_24dp"
                 />
             <TextView
                 android:id="@+id/likes_count_txt"
@@ -50,7 +51,7 @@
             >
             <ImageView
                 style="@style/photo_list_icon"
-                android:src="@drawable/ic_custom_views_white_24dp"
+                app:srcCompat="@drawable/ic_custom_views_white_24dp"
                 />
             <TextView
                 android:id="@+id/views_count_txt"
